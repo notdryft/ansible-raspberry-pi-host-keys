@@ -1,0 +1,7 @@
+---
+
+- hosts: localpis
+  user: pi
+
+  roles:
+    - openssh

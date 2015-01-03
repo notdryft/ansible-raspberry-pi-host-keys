@@ -1,0 +1,7 @@
+---
+
+- name: Delete old OpenSSH host keys
+  shell: rm -v /etc/ssh/ssh_host_*
+
+- name: Regenerate OpenSSH host keys
+  shell: dpkg-reconfigure openssh-server
